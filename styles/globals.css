@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Vibur';
+  src: url('../public/Vibur-Regular.ttf');
+}
+@font-face {
+  font-family: 'denver';
+  src: url('../public/hellodenverdisplayregular_v1.6.ttf');
+}
+@font-face {
+  font-family: 'laquer';
+  src: url('../public/Lacquer\ Regular\ 400.ttf');
+}
+
+@font-face {
+  font-family: 'bbadr';
+  src: url('../public/BBadr.ttf');
+}
+
+@font-face {
+  font-family: 'bbaran';
+  src: url('../public/BBaran.ttf');
+}
+@font-face {
+  font-family: 'bbardia';
+  src: url('../public/BBardiya.ttf');
+}
+@font-face {
+  font-family: 'bcompset';
+  src: url('../public/BCompset.ttf');
+}
+@font-face {
+  font-family: 'bdavat';
+  src: url('../public/BDavat.ttf');
+}
+@font-face {
+  font-family: 'belham';
+  src: url('../public/BElham.ttf');
+}
+@font-face {
+  font-family: 'besfahan';
+  src: url('../public/BEsfehanBold.ttf');
+}
+@font-face {
+  font-family: 'bfantezy';
+  src: url('../public/BFantezy.ttf');
+}
+@font-face {
+  font-family: 'bfarnaz';
+  src: url('../public/BFarnaz.ttf');
+}
+@font-face {
+  font-family: 'bferdosi';
+  src: url('../public/BFerdosi.ttf');
+}
+@font-face {
+  font-family: 'bhamid';
+  src: url('../public/BHamid.ttf');
+}
+@font-face {
+  font-family: 'bhelal';
+  src: url('../public/BHelal.ttf');
+}
+@font-face {
+  font-family: 'bhoma';
+  src: url('../public/BHoma.ttf');
+}
+@font-face {
+  font-family: 'bjadid';
+  src: url('../public/BJadidBold.ttf');
+}
+@font-face {
+  font-family: 'bjalal';
+  src: url('../public/BJalal.ttf');
+}
+@font-face {
+  font-family: 'bkodak';
+  src: url('../public/BKoodakBold.ttf');
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:mono;
+  background: linear-gradient(90deg, #1b1b1b 0%, rgb(22, 22, 22) 30%, rgb(27, 27, 27) 100%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.neonText {
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 22px #f613fe;
+      animation: pulsate 1.5s infinite alternate;
+      transition: all 0.3s ease-out;    
+}
+
+.hoverEffect{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.5s ease-out; 
+
+}
+
+.hoverEffect:hover{
+  opacity: 1;
+}
+@keyframes pulsate {
+    
+  100% {
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f613fe,
+      0 0 80px #f613fe,
+      0 0 80px #f613fe;
+  }
+  
+  0% {
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 6px #f613fe,
+    0 0 10px #f613fe;
+}
+
+}
+.TopAnimation{
+  animation: TopAnimation 1s ease-out;
+}
+@keyframes TopAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottomAnimation{
+  animation: bottomAnimation 1s ease-out;
+}
+@keyframes bottomAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(15rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rightAnimation{
+  animation: rightAnimation 0.5s ease-out;
+}
+@keyframes rightAnimation {
+  from {
+   
+    transform: translateX(25rem);
+  }
+  to {
+  
+    transform: translateX(0);
+  }
+}
+
+.leftAnimation{
+  animation: leftAnimation 0.5s ease-out;
+}
+@keyframes leftAnimation {
+  from {
+   
+    transform: translateX(-35rem);
+  }
+  to {
+  
+    transform: translateX(0);
+  }
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+ 
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.fadeAnimation{
+  animation: fadeAnimation 3s ease-out;
+  transition: all 1s ease-out;
+}
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+ 
+  }
+  to {
+    opacity: 1;
+   
+  }
+}
+
+
+
+.wallAnimation{
+  animation: wallAnimation 1.5s infinite alternate;
+  transition: all 1s ease-out;
+}
+@keyframes wallAnimation{
+    
+  100% {
+      opacity: 0.9;
+  }
+  
+  0% {
+    opacity: 0.3;
+}
+}
+
+
+.mainNavigation{
+transition: all 0.3s ease-out;
+margin-top: 1rem;
+border-radius: 1rem;
+width: 12rem;
+padding: 0.75rem;
+background: #614385;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-tap-highlight-color: transparent;
+cursor: pointer;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: white;
+font-family: monospace;
+font-size: 1.5rem;
+}
+
+.boxShadow{
+  box-shadow:  20px 20px 40px #0b0b0b,
+             -20px -20px 40px #0b0b0b;
+}
+.boxShadow2x{
+  box-shadow:  30px 30px 50px #0b0b0b,
+             -30px -30px 50px #0b0b0b;
+}
+.testshadow{
+  box-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 22px #fa5bff;
+}
+
+
+@media only screen and (max-height: 850px) {
+  .wall {
+   height: 25rem;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .wall {
+   height: 17rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+    .wall {
+     height: 12rem;
+    }
+}
+
+
+.glassMorphism{
+
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+::-webkit-scrollbar-corner{
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252525; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 0, 45); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(243, 72, 86); 
+}
